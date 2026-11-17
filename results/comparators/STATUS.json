@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-16",
+  "benchmark": "PRESENT",
+  "triton_configs_evaluated": 37,
+  "triton_native_legal": 9,
+  "icts_trees_evaluated": 21,
+  "icts_native_legal": 0,
+  "completed_full_FVR_power_points": 3,
+  "completed_power_independent_PT_pass": null,
+  "new_large_cluster_power_status": "BLOCKED_EXTERNAL_LICENSE_SERVER_UNREACHABLE",
+  "retry": "Initial attempt and one retry both failed VCSCompiler_Net checkout; independent PrimeTime checkout also failed",
+  "iCTS_status": "Built and evaluated; no valid operating point under current 10ps hold margin; do not claim superiority over published iCTS",
+  "references_unchanged": true,
+  "next_resume": "Retry power_large commercial runs only after lab licenses are restored; assess iCTS timing integration separately before reporting a fair valid operating-point comparison.",
+  "independent_PT_evidence": "Completed 12 November reports exist; fresh 16 November clean verification failed license checkout. Do not count it as a new pass.",
+  "license_investigation": "license_diagnostics_20261117/FINDINGS.md"
+}

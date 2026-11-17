@@ -1,0 +1,14 @@
+% Upload clock_shift_fanout.pdf into the figures/ folder.
+% Insert after the introductory paragraph about coupled register-clock shifts.
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{figures/clock_shift_fanout.pdf}
+    \caption{Coupled effect of a launch-clock shift. (a) A shift at register
+    $R_L$ changes the launch time of every outgoing data path. With path
+    delays and capture clocks held fixed, their arrivals shift approximately
+    by the same amount. (b) Each path has a different permissible launch-shift
+    interval imposed by setup and hold constraints. The shared shift must lie
+    in their intersection. In this illustrative example, a $+20$ ps shift is
+    permitted by paths A and C but violates the setup limit of path B.}
+    \label{fig:clock_shift_fanout}
+\end{figure*}

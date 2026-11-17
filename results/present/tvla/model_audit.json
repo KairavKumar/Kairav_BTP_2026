@@ -1,0 +1,30 @@
+{
+  "stock_fvr": {
+    "functional_traces": 1024,
+    "capacitance_warnings_audited": 14414,
+    "actual_load_extrapolations": [],
+    "other_out_of_range_lines": [],
+    "scope": "Original Liberty fF power-table load range check of printed warnings; not full model/PVT signoff."
+  },
+  "stock_null": {
+    "functional_traces": 1024,
+    "capacitance_warnings_audited": 14414,
+    "actual_load_extrapolations": [],
+    "other_out_of_range_lines": [],
+    "scope": "Original Liberty fF power-table load range check of printed warnings; not full model/PVT signoff."
+  },
+  "mixed_e40_critical_leaves_fvr": {
+    "functional_traces": 1024,
+    "capacitance_warnings_audited": 14710,
+    "actual_load_extrapolations": [],
+    "other_out_of_range_lines": [],
+    "scope": "Original Liberty fF power-table load range check of printed warnings; not full model/PVT signoff."
+  },
+  "mixed_e40_critical_leaves_null": {
+    "functional_traces": 1024,
+    "capacitance_warnings_audited": 14710,
+    "actual_load_extrapolations": [],
+    "other_out_of_range_lines": [],
+    "scope": "Original Liberty fF power-table load range check of printed warnings; not full model/PVT signoff."
+  }
+}

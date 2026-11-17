@@ -1,0 +1,271 @@
+{
+  "protocol": {
+    "pilot_traces": 1024,
+    "classes": [
+      512,
+      512
+    ],
+    "clock_period_ns": 2,
+    "clock_frequency_MHz": 500,
+    "guard_cycles": 40,
+    "measured_cycles": 40,
+    "input_drive_phase_ns_after_rising_clock": 0.2,
+    "trace_window_ns": 80,
+    "requested_power_bin_ps": 5,
+    "fixed_secret_hex": "0000000000000000",
+    "masking": "Fresh independent 64-bit input mask and 368-bit randomness per guard/measurement transaction",
+    "interpretation": "Simulation-based first-order FVR pilot with matched random/random controls; not a security proof or hardware TVLA",
+    "files": {
+      "vectors_smoke.txt": {
+        "seed": 2026101801,
+        "count": 8,
+        "sha256": "e25afb2a884e72ae43aa27f4760671fbb31f37763292cd0276d25b78ad99a492"
+      },
+      "vectors_fvr.txt": {
+        "seed": 2026101802,
+        "count": 1024,
+        "sha256": "f6f9d11030698a4098df79565be5fe1f0a66fcc9926b7abc1e0e5adf829b6d3f"
+      },
+      "vectors_null.txt": {
+        "seed": 2026101803,
+        "count": 1024,
+        "sha256": "61e0249054a305fe7ce97d7d159e476c1b3b0296fd5a26e979060d48f4f2088e"
+      }
+    },
+    "circuits": {
+      "stock": "unchanged stock export",
+      "mixed_e40_critical_leaves": "dp_frontier_20261024/v4/mixed_e40_critical_leaves; actual weighted spread reduction 16.4217764%"
+    },
+    "new_runs": [
+      "stock_fvr",
+      "stock_null",
+      "mixed_e40_critical_leaves_fvr",
+      "mixed_e40_critical_leaves_null"
+    ],
+    "concurrency": "Two independent case jobs; FVR then null sequentially within each case to bound transient VCD storage.",
+    "acceptance": "Predeclared first-order abs(Welch t)>4.5; report null control, all crossing bins and fixed alignment. No security claim from non-crossing.",
+    "provenance": {
+      "stock": {
+        "design.v": "62a5de5f904baf33e03bc88cf9dc5086fe0a889d3d2a7a432cfbce366cafd9c6",
+        "design.sdf": "f37e87143814b0cd6c43cc78333baf8265ff40757044d263a1c49acd78567ebd",
+        "design.spef": "6e93c53715ccd971e1df0f4ae27ff0fe1a26d956c1cd916bb88fdd2c5cd61968",
+        "design.pt.sdc": "023c54b681a7f55326060c9a8866fe1142b2e5ceb665ec5254c06f427a25c6a9"
+      },
+      "mixed_e40_critical_leaves": {
+        "design.v": "cdbbd103731ee9a5a83f3f004521324aa3c66af20577b37b9527e3f56912c329",
+        "design.sdf": "78e4837eeafc93bc9db449195bbf842b33b29b240e6987464e661e715a027eed",
+        "design.spef": "ce99db778e6571da5f15973cdafbbe853f5322ad9b299d171678b44df2050352",
+        "design.pt.sdc": "d1f86164db42322d12c79822fedaca6f2d460129d6076a6f9ea4cc2569add309"
+      }
+    },
+    "remote_root": "/home/c_karfa/Kairav/cts_cost_aware_20261018/dp_power_20261024/frontier_hold",
+    "replication_note": "Same recorded matched vectors as earlier campaign; not an independent seed replication."
+  },
+  "results": {
+    "stock_fvr": {
+      "case": "stock",
+      "mode": "fvr",
+      "trace_count": 1024,
+      "class_counts": [
+        512,
+        512
+      ],
+      "max_abs_t": 2.8957337672118455,
+      "peak_time_ns": 1.995,
+      "bins_above_4_5": 0,
+      "crossed": false,
+      "crossing_range_ns": null,
+      "identical_constant_bins": 0,
+      "deterministic_difference_bins": 0,
+      "mean_measured_power_W": 0.020896761584594675,
+      "mean_class_power_W": [
+        0.02090444143093261,
+        0.020889081738256866
+      ],
+      "bin_ps": 5,
+      "window_ns": 80,
+      "out_tick_ns": 0.001,
+      "power_sha256": "e229827f0a76038bfe9aaeea450aefa0bb31e61c083325431e4a96e02e7944f5",
+      "manifest_sha256": "124e2f5d0be5504c4e1ed7e9ee48241caaaecae3af2292cb5ea059b56674f52c",
+      "scope": "First-order simulated aggregate PX power, typical corner, placement-estimated SPEF. No security proof.",
+      "post_window_terminal_clipping": null
+    },
+    "mixed_e40_critical_leaves_fvr": {
+      "case": "mixed_e40_critical_leaves",
+      "mode": "fvr",
+      "trace_count": 1024,
+      "class_counts": [
+        512,
+        512
+      ],
+      "max_abs_t": 2.581247358941229,
+      "peak_time_ns": 9.92,
+      "bins_above_4_5": 0,
+      "crossed": false,
+      "crossing_range_ns": null,
+      "identical_constant_bins": 0,
+      "deterministic_difference_bins": 0,
+      "mean_measured_power_W": 0.021643542569042933,
+      "mean_class_power_W": [
+        0.02165175783480224,
+        0.021635327303283696
+      ],
+      "bin_ps": 5,
+      "window_ns": 80,
+      "out_tick_ns": 0.001,
+      "power_sha256": "d052f787f4c49e1b94c25025b384beb2f779c219a4dd6817ab07ec9398de142f",
+      "manifest_sha256": "124e2f5d0be5504c4e1ed7e9ee48241caaaecae3af2292cb5ea059b56674f52c",
+      "scope": "First-order simulated aggregate PX power, typical corner, placement-estimated SPEF. No security proof.",
+      "post_window_terminal_clipping": {
+        "source_sha256": "d052f787f4c49e1b94c25025b384beb2f779c219a4dd6817ab07ec9398de142f",
+        "analysis_file": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/tvla_dp_candidate_20261024/lab_reports/runs/mixed_e40_critical_leaves_fvr/power_measurement_clipped.out",
+        "analysis_sha256": "4b3a4b04c397caecaa4cf319b30a3f52c969e9d93c71a0bfadb4552f3b2121d3",
+        "original_terminal_ps": 163919204,
+        "measurement_end_ps": 163919200,
+        "operation": "Clip the sole post-window terminal timestamp to the excluded right boundary. No timestamps or values inside any measurement window change; no resampling."
+      }
+    },
+    "stock_null": {
+      "case": "stock",
+      "mode": "null",
+      "trace_count": 1024,
+      "class_counts": [
+        512,
+        512
+      ],
+      "max_abs_t": 3.0140935432490945,
+      "peak_time_ns": 0.935,
+      "bins_above_4_5": 0,
+      "crossed": false,
+      "crossing_range_ns": null,
+      "identical_constant_bins": 0,
+      "deterministic_difference_bins": 0,
+      "mean_measured_power_W": 0.0209024938958618,
+      "mean_class_power_W": [
+        0.020902892915917955,
+        0.02090209487580565
+      ],
+      "bin_ps": 5,
+      "window_ns": 80,
+      "out_tick_ns": 0.001,
+      "power_sha256": "1f67dd6c05250d0b01c11975336250d4ddabe1242ec5304372521ee208a6349e",
+      "manifest_sha256": "110f86b4aa5c93836f9d0fac1c2223175d0b8ca730cb448a7112ef297a5bcaa4",
+      "scope": "First-order simulated aggregate PX power, typical corner, placement-estimated SPEF. No security proof.",
+      "post_window_terminal_clipping": null
+    },
+    "mixed_e40_critical_leaves_null": {
+      "case": "mixed_e40_critical_leaves",
+      "mode": "null",
+      "trace_count": 1024,
+      "class_counts": [
+        512,
+        512
+      ],
+      "max_abs_t": 3.0560888958925014,
+      "peak_time_ns": 8.905,
+      "bins_above_4_5": 0,
+      "crossed": false,
+      "crossing_range_ns": null,
+      "identical_constant_bins": 0,
+      "deterministic_difference_bins": 0,
+      "mean_measured_power_W": 0.021650465237030007,
+      "mean_class_power_W": [
+        0.021650174887011746,
+        0.021650755587048317
+      ],
+      "bin_ps": 5,
+      "window_ns": 80,
+      "out_tick_ns": 0.001,
+      "power_sha256": "112f8f8783b6c64d4379db0d59d727a3aad014a89072fe5cf0d00b4f88586ef6",
+      "manifest_sha256": "110f86b4aa5c93836f9d0fac1c2223175d0b8ca730cb448a7112ef297a5bcaa4",
+      "scope": "First-order simulated aggregate PX power, typical corner, placement-estimated SPEF. No security proof.",
+      "post_window_terminal_clipping": {
+        "source_sha256": "112f8f8783b6c64d4379db0d59d727a3aad014a89072fe5cf0d00b4f88586ef6",
+        "analysis_file": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/tvla_dp_candidate_20261024/lab_reports/runs/mixed_e40_critical_leaves_null/power_measurement_clipped.out",
+        "analysis_sha256": "e2b1da20ef9db3cbce3360f92414363eee3891533972852c8f1f3055c1f57c7a",
+        "original_terminal_ps": 163919204,
+        "measurement_end_ps": 163919200,
+        "operation": "Clip the sole post-window terminal timestamp to the excluded right boundary. No timestamps or values inside any measurement window change; no resampling."
+      }
+    }
+  },
+  "exploratory_nested_prefixes": {
+    "stock_fvr": {
+      "256": {
+        "max_abs_t": 5.282596861041793,
+        "bins_above_4_5": 198
+      },
+      "512": {
+        "max_abs_t": 4.128896572484066,
+        "bins_above_4_5": 0
+      },
+      "1024": {
+        "max_abs_t": 2.8957337672118455,
+        "bins_above_4_5": 0
+      }
+    },
+    "mixed_e40_critical_leaves_fvr": {
+      "256": {
+        "max_abs_t": 5.316398682695976,
+        "bins_above_4_5": 45
+      },
+      "512": {
+        "max_abs_t": 4.5905614560713435,
+        "bins_above_4_5": 36
+      },
+      "1024": {
+        "max_abs_t": 2.581247358941229,
+        "bins_above_4_5": 0
+      }
+    },
+    "stock_null": {
+      "256": {
+        "max_abs_t": 5.802036208517429,
+        "bins_above_4_5": 14071
+      },
+      "512": {
+        "max_abs_t": 4.869673195691094,
+        "bins_above_4_5": 37
+      },
+      "1024": {
+        "max_abs_t": 3.0140935432490945,
+        "bins_above_4_5": 0
+      }
+    },
+    "mixed_e40_critical_leaves_null": {
+      "256": {
+        "max_abs_t": 5.8072697162001115,
+        "bins_above_4_5": 13090
+      },
+      "512": {
+        "max_abs_t": 4.923420838409114,
+        "bins_above_4_5": 2
+      },
+      "1024": {
+        "max_abs_t": 3.0560888958925014,
+        "bins_above_4_5": 0
+      }
+    }
+  },
+  "prefix_caveat": "Matched first N samples per class; correlated exploratory subsets, not independent replication or extra traces.",
+  "stock_repeatability": {
+    "fvr": {
+      "previous_max_abs_t": 2.8957337672118455,
+      "new_max_abs_t": 2.8957337672118455,
+      "same_power_sha256": false,
+      "same_manifest_sha256": true
+    },
+    "null": {
+      "previous_max_abs_t": 3.0140935432490945,
+      "new_max_abs_t": 3.0140935432490945,
+      "same_power_sha256": false,
+      "same_manifest_sha256": true
+    }
+  },
+  "previous_positive_control": {
+    "rerun_in_this_campaign": false,
+    "trace_count": 256,
+    "max_abs_t": 46.33852117069788,
+    "interpretation": "Previously measured input-sharing-disabled stock sensitivity control; not protected candidate traces."
+  }
+}

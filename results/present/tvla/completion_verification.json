@@ -1,0 +1,16 @@
+{
+  "completed_on": "2026-10-28",
+  "all_four_runs_complete": true,
+  "functional_transactions_per_run": 1024,
+  "hashes": {
+    "protocol.json": "b70d323f25b56a15b41584bd942f41e62c18f8d0fc01132aad8dbabf7fdaf3d0",
+    "tvla_results.json": "1d9740a9dd2ac9e857ddea9225b6905836bef21e778f1d010bdeb948242ee1c2",
+    "summary.json": "ab944381fbba0129acbc2367b5ccd76c3f34e6efed843a7c037611e1e6944f01",
+    "timestamp_audit.json": "4f6edbb482db5084fd76089d46952181ef96a24c95c24214e924d0af9e893d63",
+    "terminal_clipping.json": "2e3cb0c048daeb155c90a24495363d443ba0a4bf27a74ec57cb565ef495940db",
+    "model_audit.json": "1672c0254c617890f508e21d9a6bb4d4e951743083a5f28ebc3e6ce47a679db5",
+    "ASSESSMENT.md": "4268b7392efccacdbcfc7ad7442497b2e6e08df3a28a4dec16524c1de4f844a2",
+    "power_comparison.png": "10e023986fcb643d5c86387d07b25ca134bf5dc0705db2c2967cb4a7972604a3",
+    "tvla_comparison.png": "a9675453799f46115611c40e04f57a263f22b43c76b74f5c64f813a32efc0ec0"
+  }
+}

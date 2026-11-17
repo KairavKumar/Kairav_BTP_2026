@@ -1,0 +1,22 @@
+{
+  "stock_fvr": {
+    "max_abs_t": 2.8957337672118455,
+    "mean_measured_power_W": 0.020896761584594675,
+    "bins_above_4_5": 0
+  },
+  "stock_null": {
+    "max_abs_t": 3.0140935432490945,
+    "mean_measured_power_W": 0.0209024938958618,
+    "bins_above_4_5": 0
+  },
+  "mixed_e40_critical_leaves_fvr": {
+    "max_abs_t": 2.581247358941229,
+    "mean_measured_power_W": 0.021643542569042933,
+    "bins_above_4_5": 0
+  },
+  "mixed_e40_critical_leaves_null": {
+    "max_abs_t": 3.0560888958925014,
+    "mean_measured_power_W": 0.021650465237030007,
+    "bins_above_4_5": 0
+  }
+}

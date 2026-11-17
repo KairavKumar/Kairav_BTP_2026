@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-17",
+  "checks": {
+    "import_and_raw_power_hashes": "PASS",
+    "measured_build_source_hashes": "17/17 PASS",
+    "LP_shared_group_gain20": "PASS",
+    "raw_power_TVLA_replay": "all 4 peaks and window means reproduced",
+    "native_reload": "stock/candidate cost/setup/hold/area reproduced",
+    "native_reconstruction": "unrepaired and repaired candidate cost/setup/hold/area reproduced"
+  },
+  "execution_binary_sha256": "3428da964011f1aaa6b60e989abcbc55f01ddd47c8c520116a4cac01c302b520",
+  "upstream_OpenROAD_revision": "63fe72c577ef12d2ac2a0a944bbd842f9af8a0a7",
+  "not_executed": [
+    "fresh commercial simulation/PX campaign",
+    "clean OpenROAD dependency rebuild"
+  ],
+  "notes": "Only portable analysis/native replay entry points were run. Commercial scripts are supplied for new authorized runs."
+}

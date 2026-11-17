@@ -1,0 +1,11 @@
+{
+  "source": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/dp_frontier_20261024/v4/mixed_e40_critical_leaves",
+  "binary": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/build7/openroad",
+  "sha256": {
+    "design.pt.sdc": "d1f86164db42322d12c79822fedaca6f2d460129d6076a6f9ea4cc2569add309",
+    "design.v": "cdbbd103731ee9a5a83f3f004521324aa3c66af20577b37b9527e3f56912c329",
+    "design.spef": "ce99db778e6571da5f15973cdafbbe853f5322ad9b299d171678b44df2050352",
+    "design.sdf": "78e4837eeafc93bc9db449195bbf842b33b29b240e6987464e661e715a027eed",
+    "design.sdc": "77cd74f6e40565af5931c38f5143d15a5cdef4162e1bb0d959a3e1b3f9849374"
+  }
+}

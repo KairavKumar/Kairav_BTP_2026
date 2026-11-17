@@ -1,0 +1,11 @@
+{
+  "clkbuf_cost_239_clk": "BUF_X4",
+  "clkbuf_cost_246_clk": "BUF_X4",
+  "clkbuf_cost_249_clk": "BUF_X4",
+  "clkbuf_cost_256_clk": "BUF_X4",
+  "clkbuf_cost_267_clk": "BUF_X4",
+  "clkbuf_cost_305_clk": "BUF_X4",
+  "clkbuf_cost_309_clk": "BUF_X4",
+  "clkbuf_cost_326_clk": "BUF_X4",
+  "clkbuf_cost_327_clk": "BUF_X4"
+}

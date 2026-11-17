@@ -1,0 +1,2 @@
+LAYER_FUNCTIONAL_PASS lane_checks=4096 transactions=256 hold_cycles=40
+check_layer.sv:36: $finish called at 102406 (1s)

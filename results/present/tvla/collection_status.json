@@ -1,0 +1,102 @@
+{
+  "ready": {
+    "stock_fvr": {
+      "power_sha256": "e229827f0a76038bfe9aaeea450aefa0bb31e61c083325431e4a96e02e7944f5",
+      "power_bytes": 53630975,
+      "power_warnings": [],
+      "power_completed": true
+    },
+    "stock_null": {
+      "power_sha256": "1f67dd6c05250d0b01c11975336250d4ddabe1242ec5304372521ee208a6349e",
+      "power_bytes": 53627045,
+      "power_warnings": [],
+      "power_completed": true
+    },
+    "mixed_e40_critical_leaves_fvr": {
+      "power_sha256": "d052f787f4c49e1b94c25025b384beb2f779c219a4dd6817ab07ec9398de142f",
+      "power_bytes": 116383041,
+      "power_warnings": [],
+      "power_completed": true
+    },
+    "mixed_e40_critical_leaves_null": {
+      "power_sha256": "112f8f8783b6c64d4379db0d59d727a3aad014a89072fe5cf0d00b4f88586ef6",
+      "power_bytes": 116394622,
+      "power_warnings": [],
+      "power_completed": true
+    }
+  },
+  "status": {
+    "stock_fvr": {
+      "simulation.log": 920,
+      "ucli.key": 0,
+      "flex983.log": 0,
+      "trace_manifest.csv": 44650,
+      "power.log": 7964673,
+      "units.rpt": 441,
+      "timing_checks.rpt": 7300,
+      "primetime_setup.rpt": 344,
+      "primetime_hold.rpt": 344,
+      "constraint_violations.rpt": 229,
+      "cells.rpt": 2160911,
+      "power_checks.rpt": 1607516,
+      "power.out": 53630975,
+      "average_power.rpt": 1433,
+      "hierarchy_power.rpt": 913,
+      "activity.vcd.gz": 274722598
+    },
+    "stock_null": {
+      "simulation.log": 920,
+      "ucli.key": 0,
+      "flex309.log": 0,
+      "trace_manifest.csv": 44650,
+      "power.log": 7964589,
+      "units.rpt": 441,
+      "timing_checks.rpt": 7300,
+      "primetime_setup.rpt": 344,
+      "primetime_hold.rpt": 344,
+      "constraint_violations.rpt": 229,
+      "cells.rpt": 2160911,
+      "power_checks.rpt": 1607516,
+      "power.out": 53627045,
+      "average_power.rpt": 1433,
+      "hierarchy_power.rpt": 913,
+      "activity.vcd.gz": 274772386
+    },
+    "mixed_e40_critical_leaves_fvr": {
+      "simulation.log": 920,
+      "ucli.key": 0,
+      "flex984.log": 0,
+      "trace_manifest.csv": 44650,
+      "power.log": 8227132,
+      "units.rpt": 441,
+      "timing_checks.rpt": 7300,
+      "primetime_setup.rpt": 344,
+      "primetime_hold.rpt": 344,
+      "constraint_violations.rpt": 229,
+      "cells.rpt": 2196957,
+      "power_checks.rpt": 1639559,
+      "power.out": 116383041,
+      "average_power.rpt": 1432,
+      "hierarchy_power.rpt": 911,
+      "activity.vcd.gz": 433450501
+    },
+    "mixed_e40_critical_leaves_null": {
+      "simulation.log": 920,
+      "ucli.key": 0,
+      "flex470.log": 0,
+      "trace_manifest.csv": 44650,
+      "power.log": 8227080,
+      "units.rpt": 441,
+      "timing_checks.rpt": 7300,
+      "primetime_setup.rpt": 344,
+      "primetime_hold.rpt": 344,
+      "constraint_violations.rpt": 229,
+      "cells.rpt": 2196957,
+      "power_checks.rpt": 1639559,
+      "power.out": 116394622,
+      "average_power.rpt": 1433,
+      "hierarchy_power.rpt": 913,
+      "activity.vcd.gz": 433448266
+    }
+  }
+}

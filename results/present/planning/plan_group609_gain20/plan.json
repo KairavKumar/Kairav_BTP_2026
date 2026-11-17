@@ -1,0 +1,10 @@
+{
+  "status": "PREDICTED_TARGETS_ONLY",
+  "requested_reduction_percent": 20,
+  "predicted_reduction_percent": 20.00000000000043,
+  "prescribed_groups": 609,
+  "movement_bound_ps": 80,
+  "planning_slack_margin_ps": 20,
+  "gate_regressions": "reported; no hard per-gate cap",
+  "objective": "minimum movement plus total excess worsening, subject to requested weighted spread reduction and planning timing constraints"
+}

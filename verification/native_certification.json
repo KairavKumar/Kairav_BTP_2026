@@ -1,0 +1,52 @@
+{
+  "weighted_reduction_percent": 16.42177640659623,
+  "improved": 3055,
+  "regressed": 987,
+  "improved_at_least_1ps": 2053,
+  "max_regression_ps": 45.256326464127056,
+  "max_clock_movement_ps": 71.21789269426415,
+  "worst_gate_spread_ps": 307.2544163540414,
+  "spread_percentiles_ps": {
+    "50": 28.942098717621448,
+    "90": 159.17234752471646,
+    "95": 181.77063465518725,
+    "99": 230.7305066451271
+  },
+  "target_rms_error_ps": 12.451538555664655,
+  "target_max_error_ps": 30.160709081119062,
+  "groups": 609,
+  "metrics": {
+    "cost_ns": "1215.2545379728906",
+    "setup_ns": "1.423228131187065",
+    "hold_ns": "0.01864319862367868",
+    "max_shift_ns": "0.0712177442643381",
+    "area_um2": "40063.59000000681",
+    "clock_area_um2": "804.915999999994",
+    "electrical_pass": "1"
+  },
+  "bound_ps": 80,
+  "regression_budget_ps": null,
+  "area_ratio": 1.001116672316493,
+  "clock_area_ratio": 1.1466464569912773,
+  "legal": true,
+  "accepted_improvement": true,
+  "overhead": {
+    "clock_cells": "673",
+    "clock_cells_including_dummy": "673",
+    "clock_area_including_dummy_um2": "804.915999999994",
+    "clock_pin_hpwl_um": "15053.992999999995",
+    "routed_clock_wire_um": "0.0"
+  },
+  "legacy_5ps_gate_cap_pass": false,
+  "regression_policy": "report all regressions; no hard per-gate cap",
+  "gates_worse_than_ps": {
+    "5": 428,
+    "10": 196,
+    "20": 28,
+    "40": 1
+  },
+  "unweighted_mean_spread_ps": 59.40335493387402,
+  "stock_unweighted_mean_spread_ps": 70.17204720530508,
+  "certification": "native OpenSTA placement-based only; independent PrimeTime pending",
+  "fresh_process_data_identity": "PASS"
+}

@@ -1,0 +1,18 @@
+{
+  "mixed_e40_critical_leaves_fvr": {
+    "source_sha256": "d052f787f4c49e1b94c25025b384beb2f779c219a4dd6817ab07ec9398de142f",
+    "analysis_file": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/tvla_dp_candidate_20261024/lab_reports/runs/mixed_e40_critical_leaves_fvr/power_measurement_clipped.out",
+    "analysis_sha256": "4b3a4b04c397caecaa4cf319b30a3f52c969e9d93c71a0bfadb4552f3b2121d3",
+    "original_terminal_ps": 163919204,
+    "measurement_end_ps": 163919200,
+    "operation": "Clip the sole post-window terminal timestamp to the excluded right boundary. No timestamps or values inside any measurement window change; no resampling."
+  },
+  "mixed_e40_critical_leaves_null": {
+    "source_sha256": "112f8f8783b6c64d4379db0d59d727a3aad014a89072fe5cf0d00b4f88586ef6",
+    "analysis_file": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/tvla_dp_candidate_20261024/lab_reports/runs/mixed_e40_critical_leaves_null/power_measurement_clipped.out",
+    "analysis_sha256": "e2b1da20ef9db3cbce3360f92414363eee3891533972852c8f1f3055c1f57c7a",
+    "original_terminal_ps": 163919204,
+    "measurement_end_ps": 163919200,
+    "operation": "Clip the sole post-window terminal timestamp to the excluded right boundary. No timestamps or values inside any measurement window change; no resampling."
+  }
+}

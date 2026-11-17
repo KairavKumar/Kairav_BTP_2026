@@ -1,0 +1,28 @@
+{
+  "case": "stock",
+  "mode": "null",
+  "trace_count": 1024,
+  "class_counts": [
+    512,
+    512
+  ],
+  "max_abs_t": 3.0140935432490945,
+  "peak_time_ns": 0.935,
+  "bins_above_4_5": 0,
+  "crossed": false,
+  "crossing_range_ns": null,
+  "identical_constant_bins": 0,
+  "deterministic_difference_bins": 0,
+  "mean_measured_power_W": 0.0209024938958618,
+  "mean_class_power_W": [
+    0.020902892915917955,
+    0.02090209487580565
+  ],
+  "bin_ps": 5,
+  "window_ns": 80,
+  "out_tick_ns": 0.001,
+  "power_sha256": "1f67dd6c05250d0b01c11975336250d4ddabe1242ec5304372521ee208a6349e",
+  "manifest_sha256": "110f86b4aa5c93836f9d0fac1c2223175d0b8ca730cb448a7112ef297a5bcaa4",
+  "scope": "First-order simulated aggregate PX power, typical corner, placement-estimated SPEF. No security proof.",
+  "post_window_terminal_clipping": null
+}

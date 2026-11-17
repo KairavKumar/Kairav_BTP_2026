@@ -1,0 +1,62 @@
+{
+  "pilot_traces": 1024,
+  "classes": [
+    512,
+    512
+  ],
+  "clock_period_ns": 2,
+  "clock_frequency_MHz": 500,
+  "guard_cycles": 40,
+  "measured_cycles": 40,
+  "input_drive_phase_ns_after_rising_clock": 0.2,
+  "trace_window_ns": 80,
+  "requested_power_bin_ps": 5,
+  "fixed_secret_hex": "0000000000000000",
+  "masking": "Fresh independent 64-bit input mask and 368-bit randomness per guard/measurement transaction",
+  "interpretation": "Simulation-based first-order FVR pilot with matched random/random controls; not a security proof or hardware TVLA",
+  "files": {
+    "vectors_smoke.txt": {
+      "seed": 2026101801,
+      "count": 8,
+      "sha256": "e25afb2a884e72ae43aa27f4760671fbb31f37763292cd0276d25b78ad99a492"
+    },
+    "vectors_fvr.txt": {
+      "seed": 2026101802,
+      "count": 1024,
+      "sha256": "f6f9d11030698a4098df79565be5fe1f0a66fcc9926b7abc1e0e5adf829b6d3f"
+    },
+    "vectors_null.txt": {
+      "seed": 2026101803,
+      "count": 1024,
+      "sha256": "61e0249054a305fe7ce97d7d159e476c1b3b0296fd5a26e979060d48f4f2088e"
+    }
+  },
+  "circuits": {
+    "stock": "unchanged stock export",
+    "mixed_e40_critical_leaves": "dp_frontier_20261024/v4/mixed_e40_critical_leaves; actual weighted spread reduction 16.4217764%"
+  },
+  "new_runs": [
+    "stock_fvr",
+    "stock_null",
+    "mixed_e40_critical_leaves_fvr",
+    "mixed_e40_critical_leaves_null"
+  ],
+  "concurrency": "Two independent case jobs; FVR then null sequentially within each case to bound transient VCD storage.",
+  "acceptance": "Predeclared first-order abs(Welch t)>4.5; report null control, all crossing bins and fixed alignment. No security claim from non-crossing.",
+  "provenance": {
+    "stock": {
+      "design.v": "62a5de5f904baf33e03bc88cf9dc5086fe0a889d3d2a7a432cfbce366cafd9c6",
+      "design.sdf": "f37e87143814b0cd6c43cc78333baf8265ff40757044d263a1c49acd78567ebd",
+      "design.spef": "6e93c53715ccd971e1df0f4ae27ff0fe1a26d956c1cd916bb88fdd2c5cd61968",
+      "design.pt.sdc": "023c54b681a7f55326060c9a8866fe1142b2e5ceb665ec5254c06f427a25c6a9"
+    },
+    "mixed_e40_critical_leaves": {
+      "design.v": "cdbbd103731ee9a5a83f3f004521324aa3c66af20577b37b9527e3f56912c329",
+      "design.sdf": "78e4837eeafc93bc9db449195bbf842b33b29b240e6987464e661e715a027eed",
+      "design.spef": "ce99db778e6571da5f15973cdafbbe853f5322ad9b299d171678b44df2050352",
+      "design.pt.sdc": "d1f86164db42322d12c79822fedaca6f2d460129d6076a6f9ea4cc2569add309"
+    }
+  },
+  "remote_root": "/home/c_karfa/Kairav/cts_cost_aware_20261018/dp_power_20261024/frontier_hold",
+  "replication_note": "Same recorded matched vectors as earlier campaign; not an independent seed replication."
+}

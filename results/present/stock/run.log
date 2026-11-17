@@ -1,0 +1,5 @@
+[INFO ORD-0030] Using 2 thread(s).
+[WARNING ORD-2056] The following 1 liberty cell(s) do not have LEF masters and will be marked as dont-use:
+  WELLTAP_X1
+[INFO CTS-0321] Exported fresh source-preserving alignment model.
+ALIGNMENT_EXPORT_PASS

@@ -1,0 +1,29 @@
+% Accepted replacement for the contributions paragraph:
+The proposed approach combines two methodological components.
+First, source identities are retained in the timing model so
+that the planner associates each data-arrival contribution
+with the register clock that can move it. Second, the
+constructor retains multiple subtree implementations through
+bounded dynamic programming (DP), allowing timing and
+estimated energy to compete during construction. The resulting
+circuit is evaluated through native timing analysis, matched
+power simulation, and test vector leakage assessment (TVLA).
+These complementary evaluations characterize the alignment
+gains and their associated timing, power, and leakage-statistic
+tradeoffs.
+
+% Benchmark attribution, in Experimental Methodology:
+Our evaluation circuit comprises sixteen parallel instances
+of the masked PRESENT S-box implementation obtained from
+the TETRIS artifact~\cite{tetris}. We retain the original
+S-box RTL and assemble these instances into a 64-bit
+substitution layer for physical-design evaluation.
+
+% Add inside thebibliography, immediately after bibitem{present}:
+\bibitem{tetris}
+N. Sarma, T. Patidar, N. Brahamanya, and C. Karfa,
+``TETRIS: Automated Design Space Exploration of
+Randomness--Latency Trade-offs in Masked Hardware,''
+\emph{IACR Transactions on Cryptographic Hardware and
+Embedded Systems}, vol. 2026, no. 4, 2026.
+Artifact: \texttt{github.com/\allowbreak nilotpolas/\allowbreak TETRIS-artifact}.

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this repository when using this research artifact."
+title: "Security-Aware Clock Tree Synthesis through Weighted Data-Arrival Alignment"
+type: software
+authors:
+  - family-names: Kumar
+    given-names: Kairav
+repository-code: "https://github.com/KairavKumar/Kairav_BTP_2026"
+version: 0.1.0
+date-released: 2026-11-17

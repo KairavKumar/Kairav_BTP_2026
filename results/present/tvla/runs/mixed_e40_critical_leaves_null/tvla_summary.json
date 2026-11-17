@@ -1,0 +1,35 @@
+{
+  "case": "mixed_e40_critical_leaves",
+  "mode": "null",
+  "trace_count": 1024,
+  "class_counts": [
+    512,
+    512
+  ],
+  "max_abs_t": 3.0560888958925014,
+  "peak_time_ns": 8.905,
+  "bins_above_4_5": 0,
+  "crossed": false,
+  "crossing_range_ns": null,
+  "identical_constant_bins": 0,
+  "deterministic_difference_bins": 0,
+  "mean_measured_power_W": 0.021650465237030007,
+  "mean_class_power_W": [
+    0.021650174887011746,
+    0.021650755587048317
+  ],
+  "bin_ps": 5,
+  "window_ns": 80,
+  "out_tick_ns": 0.001,
+  "power_sha256": "112f8f8783b6c64d4379db0d59d727a3aad014a89072fe5cf0d00b4f88586ef6",
+  "manifest_sha256": "110f86b4aa5c93836f9d0fac1c2223175d0b8ca730cb448a7112ef297a5bcaa4",
+  "scope": "First-order simulated aggregate PX power, typical corner, placement-estimated SPEF. No security proof.",
+  "post_window_terminal_clipping": {
+    "source_sha256": "112f8f8783b6c64d4379db0d59d727a3aad014a89072fe5cf0d00b4f88586ef6",
+    "analysis_file": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/tvla_dp_candidate_20261024/lab_reports/runs/mixed_e40_critical_leaves_null/power_measurement_clipped.out",
+    "analysis_sha256": "e2b1da20ef9db3cbce3360f92414363eee3891533972852c8f1f3055c1f57c7a",
+    "original_terminal_ps": 163919204,
+    "measurement_end_ps": 163919200,
+    "operation": "Clip the sole post-window terminal timestamp to the excluded right boundary. No timestamps or values inside any measurement window change; no resampling."
+  }
+}

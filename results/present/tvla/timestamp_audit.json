@@ -1,0 +1,54 @@
+{
+  "stock_fvr": {
+    "tick_ns": 0.001,
+    "timestamp_count": 2402541,
+    "residues_mod5": {
+      "0": 2402541
+    },
+    "first_off_grid": [],
+    "nonmonotonic": [],
+    "last_timestamp_ps": 163919205
+  },
+  "stock_null": {
+    "tick_ns": 0.001,
+    "timestamp_count": 2402364,
+    "residues_mod5": {
+      "0": 2402364
+    },
+    "first_off_grid": [],
+    "nonmonotonic": [],
+    "last_timestamp_ps": 163919205
+  },
+  "mixed_e40_critical_leaves_fvr": {
+    "tick_ns": 0.001,
+    "timestamp_count": 5213688,
+    "residues_mod5": {
+      "0": 5213687,
+      "4": 1
+    },
+    "first_off_grid": [
+      {
+        "line": 10427393,
+        "ps": 163919204
+      }
+    ],
+    "nonmonotonic": [],
+    "last_timestamp_ps": 163919204
+  },
+  "mixed_e40_critical_leaves_null": {
+    "tick_ns": 0.001,
+    "timestamp_count": 5214249,
+    "residues_mod5": {
+      "0": 5214248,
+      "4": 1
+    },
+    "first_off_grid": [
+      {
+        "line": 10428515,
+        "ps": 163919204
+      }
+    ],
+    "nonmonotonic": [],
+    "last_timestamp_ps": 163919204
+  }
+}

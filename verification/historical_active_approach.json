@@ -1,0 +1,69 @@
+{
+  "approach": "Full asymmetric shared-tree reconstruction with LP requested clocks, bounded DP frontier and measured timing repair",
+  "decision": "User selected the completed TVLA reference set: PRESENT16.42%, SKINNY12.85%, AES8.80%; use their original matched full campaigns for reporting.",
+  "binary": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/build_dp_20261024_v4/openroad",
+  "objective": "Original 8/4/2 weighted data skew against frozen benchmark stock",
+  "references": {
+    "present": {
+      "circuit": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/dp_frontier_20261024/v4/mixed_e40_critical_leaves",
+      "weighted_skew_reduction_percent": 16.42177640659623,
+      "sha256": {
+        "design.odb": "6b7ed9735502dd55f9b753c610877deabee35c7a42a6a9371a60007b59667112",
+        "design.v": "cdbbd103731ee9a5a83f3f004521324aa3c66af20577b37b9527e3f56912c329",
+        "design.sdc": "09b88d176ed5c5ebdd42f7de90a1bf1e14d516843d4e83a6519a0c30ac5dbeee",
+        "result.json": "36b5225ed51d6969bd98e349d42efa8d928ec882cdaf0c23393d4921a96b833b"
+      }
+    },
+    "skinny": {
+      "circuit": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/multibench_20261031/skinny/minmove_g15_e40_root32",
+      "weighted_skew_reduction_percent": 12.851551416083574,
+      "sha256": {
+        "design.odb": "de2a58be9ab6497064f1f15efa515b73db5a61923a638bf5a956bcceb008352a",
+        "design.v": "ebf0df3158e110abce394b05562c36366addaf2fc5e247b1db9364b90bf9a998",
+        "design.sdc": "526fa451397800cbc11666953f39c6d67a33c7b08f9efd54dad80b87fa95b16a",
+        "result.json": "98e9216ecdf6f407a12300356bb4c2e16ed7b5ad4587eb51c993139e7303097d"
+      }
+    },
+    "aes_bp_tied": {
+      "circuit": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/multibench_20261031/aes_bp_tied/cal_g10_r1_root32",
+      "weighted_skew_reduction_percent": 8.804535452457932,
+      "sha256": {
+        "design.odb": "8a3fe9e9a646e43e4d9980845017e5226e3b89a7afdd2046ef923581c3b34e60",
+        "design.v": "db71072f0db053af917bef72eedee8d7dfe8c87d44bc4d443f97a14f1c5a548c",
+        "design.sdc": "aeea8a75953dc37be6a70cb0b78b7f486f325b4684da460452800e46103f624b",
+        "result.json": "f15b80e89d652dd31426d18f9df0be6972a3eacaaf127b3731e67d4ab646e850"
+      }
+    }
+  },
+  "archived_experiments": [
+    "stock_reuse_20261101",
+    "subtree_reuse_20261101"
+  ],
+  "policy": "Preserve archived experiments. Future power improvements should retain comparable achieved skew; do not promote lower-skew reuse results as replacements merely for lower overhead.",
+  "alternative_power_tradeoffs": {
+    "skinny": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/universal_power_20261031/skinny/span40_axis0_sink0_r0_root32",
+    "aes_bp_tied": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/universal_power_20261031/aes_bp_tied/advance3_repair_0"
+  },
+  "present_lower_power_reference": {
+    "circuit": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/dp_frontier_20261024/v4/mixed_e40_critical_leaves",
+    "weighted_skew_reduction_percent": 16.42177640659623,
+    "sha256": {
+      "design.odb": "6b7ed9735502dd55f9b753c610877deabee35c7a42a6a9371a60007b59667112",
+      "design.v": "cdbbd103731ee9a5a83f3f004521324aa3c66af20577b37b9527e3f56912c329",
+      "design.sdc": "09b88d176ed5c5ebdd42f7de90a1bf1e14d516843d4e83a6519a0c30ac5dbeee",
+      "result.json": "36b5225ed51d6969bd98e349d42efa8d928ec882cdaf0c23393d4921a96b833b"
+    }
+  },
+  "present_high_skew_reference": {
+    "circuit": "/home/kairav1902/MlEda/FMSV_project/Kairav/cts_cost_aware_20261018/controlled_x4_advance5_v7/circuit",
+    "weighted_skew_reduction_percent": 17.60000488207762,
+    "role": "Highest preserved measured native-legal skew reduction; larger power overhead than16.42% candidate",
+    "sha256": {
+      "design.odb": "1bf81538cf8001f72f2e78125490945c85113d49aa6195e69275af4e58b71fae",
+      "design.v": "69c9ec261e507848ade71652709ed834de852cec673eb1417d6c1c609781798e",
+      "design.sdc": "a0db43e17dc62af7704d974adbe638d69db32f0c96ad4936a38c0cbaa96b0ed6",
+      "result.json": "9f66da9ed280d6dd5e0ec9329d77ac84711c2fd05eb973c075fe896c393a0635"
+    }
+  },
+  "reporting_reference": "Full512traces/class FVR/null campaigns; later256-transaction power-only pilots and reuse experiments are separate archived tradeoffs."
+}
