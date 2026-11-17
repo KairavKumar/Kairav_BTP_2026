@@ -1,8 +1,8 @@
 __pycache__/
 *.pyc
 .venv/
-runs/
-build/
+/runs/
+/build/
 .cache/
 *.aux
 *.log
