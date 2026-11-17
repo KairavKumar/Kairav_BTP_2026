@@ -17,3 +17,5 @@ The repository deliberately supplies recorded commands rather than an automatic 
 ## Portable local launcher
 
 Run `python scripts/run_commercial.py --name new_campaign --cell-models /absolute/path/stdcells.v --library-db /absolute/path/library.db` from the repository root on the authorized tool machine. It stages saved exports, compiles VCS, and runs all four simulation/PX cases into a fresh runs/ directory. It checks license errors, exit status and completion markers. This new launcher was syntax-checked, not executed while license connectivity is unavailable. It needs your existing tool/Library Compiler environment. Audit warning reports and hashes before reporting a new campaign; it does not replace the preserved completed campaign.
+
+The portable compile preserves the original `+neg_tchk +define+NTC` flags. Timing checks gated by NTC in the cell models are disabled; use the independent STA reports for setup/hold assessment. Functional simulation completion is a separate check.
